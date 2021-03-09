@@ -3,31 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <title>Название страницы</title>
-    <meta name="description" content="Описание страницы" />
+    <meta name="description" content="Описание страницы"/>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!--- <link rel="icon" href="/img/favicon.png"> --->
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 
 </head>
-<body>
-<header>
-    Шапка
-    <nav>
-        Навигация
-    </nav>
+<body class="container">
+
+<header class="header-main">
+    <div class="header-top">
+        <div class="logo" id="logo"><img src="img/logo.png" alt="SCANDI"><a href="#logo">SCANDI</a></div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Как мы работаем</a></li>
+                <li><a href="#">Отзывы клиентов</a></li>
+                <li><a href="#">Оставить заявку</a></li>
+            </ul>
+        </nav>
+        <a href="tel: +79818574624" class="phone">+7 (981) 857-46-24</a>
+    </div>
+    <div class="header-bottom">
+        <h1>Поможем сделать
+            вашу квартиру
+            уютнее</h1>
+        <p>Подбираем текстиль, мебель и аксессуары
+            под ваш интерьер, находим магазины
+            и помогаем организовать доставку</p>
+        <input type="button" value="Оставить заявку" class="header-bottom">
+    </div>
 </header>
+
 <main>
-    <section>
-        <h1>Заголовок страницы</h1>
-        Основная часть
+    <section class="about-us">
+        <div class="about-us__top">
+            <h2 class="title-center">О нас</h2>
+            <div class="about-us__top_img">
+                <img src="img/o-nas.jpg" alt="О нас">
+            </div>
+            <div class="about-us__top_text">
+                Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать
+                неповторимые
+                интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то, что по-настоящему
+                вдохновляет
+                дизайнеров нашей студии. 
+                Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:
+                « Да! Это именно то, что действительно достойно моего дома!»
+            </div>
+        </div>
+        <ul class="about-us__bottom">
+            <li class="about-us__bottom_advantage">
+                <b>5</b>
+                лет опыта
+            </li>
+            <li class="about-us__bottom_advantage">
+                <b>100</b>
+                проектов
+            </li>
+            <li class="about-us__bottom_advantage">
+                <b>10</b>
+                наград
+            </li>
+        </ul>
+    </section>
+
+    <section class="our-works">
+        <h2 class="title-left">Наши работы</h2>
+        <div class="our-works__top">
+            <figure class="our-works__top_left">
+                <figcaption>
+                    <h3>Квартира-студия
+                        30 кв.м.</h3>
+                    В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                    на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.
+                </figcaption>
+            </figure>
+            <figure class="our-works__top_right">
+                <img src="img/raboty2.jpg" alt="Наши работы"/>
+            </figure>
+        </div>
+        <div class="our-works__bottom">
+            <figure class="our-works__bottom_left">
+                <img src="img/raboty3.jpg" alt="Наши работы"/>
+            </figure>
+            <figure class="our-works__bottom_right">
+                <img src="img/raboty4.jpg" alt="Наши работы"/>
+            </figure>
+        </div>
+        <p>
+            <button value="Смотреть ещё" class="our-works__button">
+                Смотреть ещё
+                <img src="img/arrow.svg" alt="->">
+            </button>
+        </p>
+    </section>
+
+    <section class="team">
+        <h2 class="title-center">Команда</h2>
+        <ul class="team__list">
+            <li class="team-item">
+                <figure class="team-item_img">
+                    <img src="img/team1.jpg" alt="Маша">
+                    <figcaption class="team-item_text">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект,
+                        приезжает к вам домой, общается
+                        и помогает сделать вашу квартиру красивой и уютной.
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="team-item">
+                <figure class="team-item_img">
+                    <img src="img/team2.jpg" alt="Cаша">
+                    <figcaption class="team-item_text">
+                        С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт
+                        все
+                        документы
+                        и ответит на все вопросы.
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="team-item">
+                <figure class="team-item_img">
+                    <img src="img/team3.jpg" alt="Катя">
+                    <figcaption class="team-item_text">
+                        Катя тоже занимается дизайном.
+                        Она всегда находит общий язык
+                        с клиентами и точно знает,
+                        как обустроить дом так, чтобы вам понравилось.
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <section class="how-we-work">
+        <h2 class="title-center">Как мы работаем</h2>
+        <ul class="how-we-work__list">
+            <li class="how-we-work__item">
+                <b>1</b>
+                Знакомимся, выезжаем
+                на объект, утверждаем концепцию, подписываем договор.
+            </li>
+            <li class="how-we-work__item">
+                <b>2</b>
+                Подбираем мебель, текстиль, аксессуары. Делаем 3D-
+                визуализацию.
+            </li>
+            <li class="how-we-work__item">
+                <b>3</b>
+                Находим нужные магазины, помогаем с доставкой
+                и оплатой товаров.
+            </li>
+            <li class="how-we-work__item">
+                <b>4</b>
+                Воплощаем проект в жизнь:
+                расставляем мебель и цветы, вешаем шторы, находим места для мелочей
+            </li>
+        </ul>
+    </section>
+
+    <section class="reviews">
+        <h2 class="title-center">Отзывы</h2>
+        <figure class="reviews__btn_left">Влево</figure>
+        <div class="reviews__left">
+            <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего
+                дома.<br>
+                <br></p>
+            <p>Работа шла быстро, было очень приятно общаться и взаимодействовать<br>
+                с сотрудниками. Не ожидала, что это будет так легко!<br>
+                <br></p>
+            <p>Буду советовать и своим друзьям к вам обращаться!»</p>
+        </div>
+        <div class="reviews__right">
+            <figure class="reviews__right_top">
+                <img src="img/otzyv1.jpg" alt="Отзывы">
+            </figure>
+            <figure class="reviews__right_bottom">
+                <img src="img/otzyv2.jpg" alt="Отзывы">
+            </figure>
+        </div>
+        <figure class="reviews__btn_right">Вправо</figure>
+
+    </section>
+    <section class="lead">
+        <form class="lead__form">
+            <h2 class="title-left-form">Оставить заявку</h2>
+            <p class="lead__form_text">Оставьте свои контакты. Менеджер перезвонит
+                в удобное вам время и ответит на все вопросы.</p>
+
+            <input id="name" type="text" class="lead__form_input">
+            <label for="name">Ваше имя</label>
+            <input id="phone" type="text" class="lead__form_input">
+            <label for="phone">Введите телефон</label>
+
+            <p>
+                <button value="Оставить заявку" class="lead__form_button">
+                    Оставить заявку
+                </button>
+            </p>
+        </form>
+        <div class="lead__map">
+            <figure class="lead__map_img">
+                <img src="img/map.jpg" alt="Карта">
+            </figure>
+        </div>
     </section>
 </main>
-<aside>
-    Боковая колонка (сайдбар)
-</aside>
-<footer>
-    Подвал
+
+<footer class="footer_bottom">
+    <p class="footer_left">+7 (981) 857-46-24</p>
+    <p class="footer_center">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+    <p class="footer_right">ИП Королёва А.А.</p>
 </footer>
 </body>
 </html>
