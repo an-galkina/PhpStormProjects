@@ -1,0 +1,233 @@
+/* Цвета */
+
+:root {
+    --basic-brown: #533738;
+    --light-brown: #8D7370;
+
+    --dark-pink: #CC8B86;
+    --light-pink: #E2C4BA;
+
+    --basic-gray: #EFE6E4;
+    --dark-gray: #C4C4C4;
+
+    --white: #F6EDE9;
+    --full-white: #FFFFFF;
+
+}
+
+/* Для всей страницы */
+
+body {
+    min-width: 1400px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--basic-brown);
+    background-color: var(--basic-gray);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+
+.header-main {
+    background-image: url("../img/main_top.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 715px;
+    /*width: inherit;*/
+}
+
+.header-top a {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--basic-brown);
+}
+
+.header-top a:hover,
+.header-top a:focus {
+    color: var(--light-brown);
+    text-decoration: underline;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.header-bottom h1 {
+    font-size: 50px;
+    line-height: 62px;
+}
+
+.button-send {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: var(--dark-pink);
+}
+
+.button-send:hover,
+.button-send:focus,
+.button-send:active {
+    background-color: var(--light-pink);
+}
+
+/* О нас */
+.about-us__bottom_advantage {
+    list-style: none;
+    text-align: center;
+}
+
+.about-us__bottom {
+    background-color: var(--light-brown);
+}
+
+.about-us__bottom_advantage {
+    color: var(--full-white);
+}
+
+.about-us__bottom_advantage b {
+    font-size: 50px;
+    line-height: 62px;
+}
+
+.about-us__bottom_advantage span {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+
+/* Наши работы */
+.title-left {
+    text-align: left;
+}
+
+.our-works__button {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    border: 0;
+    background-color: var(--basic-gray);
+    /*text-align: center;*/
+    margin: 0 auto;
+}
+
+/* Команда */
+
+.team {
+    background-color: var(--light-pink);
+}
+
+.team-item {
+    list-style: none;
+}
+
+/* Как мы работаем */
+.how-we-work__item {
+    list-style: none;
+}
+
+.how-we-work__item b {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--full-white);
+    /*display: inline-block;*/
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    background-color: var(--light-brown);
+}
+
+
+.how-we-work__item span {
+    text-align: center;
+}
+
+/* Отзывы */
+
+.reviews__btn_left,
+.reviews__btn_right {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    color: var(--full-white);
+    background-color: var(--dark-pink);
+    /*background-image: url("../img/arrow.svg");*/
+    background-repeat: no-repeat;
+}
+
+.reviews__btn_left {
+    transform: rotate(180deg);
+}
+
+
+/* Оставить заявку */
+
+.lead {
+    background-color: var(--light-brown);
+    color: var(--full-white);
+}
+
+.title-left-form {
+    text-align: left;
+}
+
+.lead__form_text {
+    opacity: 0.6;
+}
+
+.lead__form label {
+    color: var(--white);
+}
+
+.lead__form_button {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: var(--dark-pink);
+}
+
+.lead__form_after {
+    background-color: var(--dark-gray);
+}
+
+/* Футер */
+
+.footer_bottom a {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--basic-brown);
+}
+
+.footer_bottom a:hover,
+.footer_bottom a:focus {
+    color: var(--light-brown);
+    text-decoration: underline;
+}
